@@ -34,7 +34,7 @@ const TodoList = ({ itemsList, markComplete, updateItem }) => {
           <div>
             {editIndex === index ? (
               <button
-                className="btn btn-outline-success mr-2"
+                className="btn btn-outline-primary text-primary-emphasis me-2"
                 onClick={handleUpdate}
               >
                 Update
@@ -43,7 +43,7 @@ const TodoList = ({ itemsList, markComplete, updateItem }) => {
               <>
                 <FontAwesomeIcon
                   icon={faCircleCheck}
-                  className="mr-2"
+                  className="me-2"
                   onClick={() => markComplete(index)}
                 />
                 <FontAwesomeIcon

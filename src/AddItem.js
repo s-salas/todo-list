@@ -12,7 +12,8 @@ const AddItem = ({ newItem, setNewItem, onSubmit }) => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="w-auto">
+      <div className="input-group mb-3">
       <input
         type="text"
         placeholder="New task"
@@ -26,6 +27,7 @@ const AddItem = ({ newItem, setNewItem, onSubmit }) => {
       >
         Add
       </button>
+      </div>
     </form>
   );
 };

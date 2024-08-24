@@ -27,18 +27,20 @@ const TodoWrapper = () => {
 
   return (
     <div className="container-full-height d-flex justify-content-center p-3 mb-2 bg-primary-subtle text-primary-emphasis">
-      <div className="w-50 p-3">
+      <div className="w-auto p-3">
         <h1 className="text-center">To Do List:</h1>
         <TodoList
           itemsList={itemsList}
           markComplete={markComplete}
           updateItem={updateItem} // Ensure updateItem is passed as a prop
         />
+        <div className="d-flex justify-content-left">
         <AddItem
           newItem={newItem}
           setNewItem={setNewItem}
           onSubmit={handleAddItem}
         />
+      </div>
       </div>
     </div>
   );
